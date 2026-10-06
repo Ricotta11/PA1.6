@@ -23,7 +23,7 @@ Now let's see if GitHub Copilot can help you create a simple Python script. Make
 ```
 Could you create a `.py` file that prints "Hello, World!"?
 ```
-
+<>
 Note that you can keep or undo the suggestions it provides. You can also ask it to explain the code it generates if you want to understand it better.
 
 Let's try and have GitHub Copilot to run the script for you by asking it to run the file. Make sure to ask it using your conda mude-base environment. On windows, you might need to discuss this a bit with GitHub Copilot as VS code tries to use Powershell which is not compatible with conda. You can ask it to use cmd instead.

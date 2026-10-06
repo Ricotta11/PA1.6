@@ -128,9 +128,9 @@ def plot_predictive(log: Dict[str, List[float]], out_path: str):
     upper = log.get("upper", [])
     T_meas = log["T_meas"]
     fig, ax = plt.subplots()
-    ax.plot(t, T_meas, label="Measured/Filtered T")
     if T_pred:
-        ax.plot(t, T_pred, label="Predicted T (lookahead)")
+        ax.plot(t, T_pred, label="Predicted T (lookahead)", alpha=0.35, linewidth=0.8)
+    ax.plot(t, T_meas, label="Measured/Filtered T", linewidth=1.2)
     if lower and upper:
         ax.plot(t, lower, linestyle=":", label="Lower threshold")
         ax.plot(t, upper, linestyle=":", label="Upper threshold")
